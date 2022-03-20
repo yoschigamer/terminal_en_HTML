@@ -1,0 +1,242 @@
+@font-face {
+    font-family: "KGHAPPYShadows";
+    src: url(/Font/KGHAPPY.ttf) format('woff2');
+}
+@font-face {
+    font-family: "KGHAPPYSolid";
+    src: url(/Font/KGHAPPYSolid.ttf) format('woff2');
+}
+
+
+html, body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;  padding: 0;
+    background-color: transparent;
+/*   background:url('../image/wallpaper.gif') repeat-y 100% 100% fixed;*/
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: rgb(255, 170, 170);
+    font-family: "KGHAPPYSolid";
+}
+p {
+    color: rgb(219, 212, 212);
+    font-family: KGHAPPYShadows;
+    font-size: 20px;
+}
+video {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+@media (min-aspect-ratio: 16/9) {
+    video {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    video { 
+        width:auto;
+        height: 100%;
+    }
+}
+
+.windows {
+    width: 60%;
+    height: 65%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow:0 0 50px 10px rgba(0, 0, 0, 0.438);
+    border: 1px solid rgb(47, 47, 47);
+    border-radius: 10px;
+    animation: 0.4s open linear;
+}
+.A_ { 
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    width: 100%;
+    height: 6%;
+    background-color: #e34f55;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.scroll {
+    overflow: scroll;
+    width: calc(100% - 20px);
+    height: 100%;
+    border-radius: 0 0 0 10px;
+}
+.consol_log {
+    height: 1000%;
+    width: calc(100%);
+    background-color: #008fd1;
+    border-radius: 0 0 0 10px;
+}
+.B {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 94%;
+    background-color: #008fd1;
+    border-radius: 0 0 10px 10px;
+}
+
+.Scroll_bar {
+    border-radius: 0 0 10px 0;
+    width: 20px;
+    background-color: #d4c73f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cross_up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    background-color: #d4c73f;
+}
+.cross_up img{
+    transform: rotate(90deg);
+}
+.nav_draggable {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: none;
+}
+.draggable{
+    width: 80%;
+    height: 5%;
+    border-radius: 2px;
+    background-color: #fff;
+
+}
+.draggable:hover{
+    background-color: rgb(119, 119, 119);
+    transition: all 0.3s;
+}
+.cross_down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    background-color: #d4c73f;
+    border-radius: 0 0 10px 0;
+}
+.cross_down img{
+        transform: rotate(-90deg);
+}
+.utility_container{
+    border-radius: 0 10px 0 0;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color: #e34f55;
+    justify-content: flex-end;
+}
+.windows_icon{
+    width: 40px;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.windows_name{
+    width: auto;
+    background-color: none;
+    display: flex;
+    color: #cfcfcf;
+    align-items: center;
+}
+
+.windows_identification {
+    
+    width: 50%;
+    background-color: none;
+    display: flex;
+}
+.ico {
+    width: 30px;
+}
+img {
+    position: absolute;
+    width: 15px;
+
+}
+
+.close_img {
+    transform: rotate(45deg);
+    border-radius: 0 10px 0 0;
+    width: 15px;
+}
+.utility {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    height: 100%;
+    width: 50px;
+}
+
+.utility:hover {
+    background-color: #00000075;
+    transition: all 0.1s;
+}
+
+#close:hover {
+    background-color: red;
+}
+
+#all {
+    display: none;
+}
+
+#app {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 89, 255);
+    border-radius: 30px;
+    -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+            animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    border: none;
+    animation: 0.6s open linear;
+    box-shadow: 5px 0 50px 5px rgba(0, 0, 0, 0.493), 1px -1px rgb(0, 34, 98), 2px -2px rgb(0, 34, 98), 3px -3px rgb(0, 34, 98), 4px -4px rgb(0, 34, 98);
+}
+
+@keyframes open {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes open {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
