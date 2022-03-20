@@ -24,6 +24,8 @@ h1 {
     font-family: "KGHAPPYSolid";
 }
 p {
+    margin: 1%;
+    padding: 0;
     color: rgb(219, 212, 212);
     font-family: KGHAPPYShadows;
     font-size: 20px;
@@ -74,8 +76,8 @@ video {
     height: 100%;
     border-radius: 0 0 0 10px;
 }
-.consol_log {
-    height: 1000%;
+.console_log {
+    height: 2000%;
     width: calc(100%);
     background-color: #008fd1;
     border-radius: 0 0 0 10px;
@@ -117,10 +119,12 @@ video {
     background-color: none;
 }
 .draggable{
+    position: relative;
     width: 80%;
     height: 5%;
     border-radius: 2px;
     background-color: #fff;
+    max-top: 100%;
 
 }
 .draggable:hover{
