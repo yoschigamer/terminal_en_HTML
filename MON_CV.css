@@ -174,7 +174,8 @@ video {
     display: flex;
 }
 .ico {
-    width: 30px;
+    height: auto;
+    max-width: 1.5%;
 }
 img {
     position: absolute;
@@ -253,7 +254,10 @@ img {
     p {
       font-size: 10px;
     }
-        h1 {
+    h1 {
         font-size: 20px;
+    }
+    .ico {
+        width: 30px;
     }
 }
