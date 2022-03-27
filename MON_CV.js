@@ -23,3 +23,7 @@ scroll?.addEventListener('scroll', (event) => {
     var drag = document.querySelector("#drag").style.top = scroll / console_height  * 100 + '%';
     console.log(`${scroll} / ${console_height} * 100 = ${drag}`)
 });
+
+function myFunction() {
+    document.getElementById("windows").classList.toggle('active');
+}
