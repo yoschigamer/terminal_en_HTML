@@ -1,3 +1,2 @@
 # terminal_en_HTML => in build
-
-File vidéo to fat for upload
+https://yoschigamer.github.io/terminal_en_HTML/
