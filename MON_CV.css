@@ -1,10 +1,10 @@
 @font-face {
-    font-family: "KGHAPPYShadows";
-    src: url(/Font/KGHAPPY.ttf) format('woff2');
+    font-family: "KGHAPPY";
+    src: url(./Font/KGHAPPY.ttf) format('woff2');
 }
 @font-face {
     font-family: "KGHAPPYSolid";
-    src: url(/Font/KGHAPPYSolid.ttf) format('woff2');
+    src: url(./Font/KGHAPPYSolid.ttf) format('woff2');
 }
 
 
@@ -28,7 +28,7 @@ p {
     margin: 1%;
     padding: 0;
     color: rgb(219, 212, 212);
-    font-family: KGHAPPYShadows;
+    font-family: KGHAPPY;
     font-size: 20px;
 }
 video {
