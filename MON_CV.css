@@ -221,6 +221,10 @@ img {
     box-shadow: 5px 0 50px 5px rgba(0, 0, 0, 0.493), 1px -1px rgb(0, 34, 98), 2px -2px rgb(0, 34, 98), 3px -3px rgb(0, 34, 98), 4px -4px rgb(0, 34, 98);
 }
 
+#app.active {
+    animation: 0.6s close linear;
+}
+
 @keyframes open {
     0% {
         transform: scale(0);
@@ -233,18 +237,18 @@ img {
     }
 }
 
-
-@keyframes open {
+@keyframes close {
     0% {
-        transform: scale(0);
+        transform: scale(1);       
     }
     50% {
-        transform: scale(1.1);
+        transform: scale(1.4);
     }
     100% {
-        transform: scale(1);
+        transform: scale(0);
     }
 }
+
 @media screen and (max-width: 1200px) {
     p {
       font-size: 20px;
