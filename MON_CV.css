@@ -221,7 +221,7 @@ img {
     box-shadow: 5px 0 50px 5px rgba(0, 0, 0, 0.493), 1px -1px rgb(0, 34, 98), 2px -2px rgb(0, 34, 98), 3px -3px rgb(0, 34, 98), 4px -4px rgb(0, 34, 98);
 }
 
-#app.active {
+#windows.active {
     animation: 0.6s close linear;
 }
 
